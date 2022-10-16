@@ -1,0 +1,24 @@
+
+table(class="table")
+    thead 
+        tr 
+            th  ID
+            th  Producto 
+            th  Precio
+            th  Foto
+        
+        tbody
+        tr
+        each product in products
+            tr
+            td(scope="row") #{product.id}
+            td(scope="row") #{product.title}  
+            td(scope="row") #{product.price} 
+            td(scope="row" )
+                img(src=product.thumbnail width = "50")
+  
+</table>
+
+<div class="text-center">
+    <a href="/" class="btn btn-dark">Ingresar Producto</a>
+</div>
